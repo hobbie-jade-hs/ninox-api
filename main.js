@@ -18,6 +18,7 @@ const getTeams = async () => {
 	const res = await axios(options);
 	// console.log(res);
 	const data = await res.data;
+	console.log(data);
 	return data;
 };
 
@@ -100,6 +101,7 @@ const saveRecord = async (vorname, nachname) => {
 	const res = await axios(options);
 	// console.log(res);
 	const data = await res.data;
+	console.log(data);
 	return data;
 };
 
@@ -165,4 +167,8 @@ const deleteRecord = async (id) => {
 	return data;
 }
 
+saveMultipleRecords();
+// saveMultipleRecords();
+// getTeams();
+// saveRecord('Bernd','Hobbie');
 // saveMultipleRecords();
